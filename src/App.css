@@ -1,0 +1,45 @@
+/* Layout */
+.app-container { display: flex; flex-direction: column; height: 100vh; width: 100vw;
+  background: #0b0f18; color: #e5e7eb; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans"; }
+
+/* Header */
+.header { display: flex; align-items: center; justify-content: space-between;
+  background: #111827; padding: .75rem 1rem; border-bottom: 1px solid #1f2937; }
+.brand h1 { margin: 0; font-size: 1.25rem; }
+.subtitle { display: block; font-size: .8rem; color: #93c5fd; }
+.righthead { display: flex; align-items: center; gap: .8rem; }
+.team-badge { background: #0ea5e9; color: #06141f; font-weight: 700; padding: .3rem .6rem; border-radius: 999px; }
+.controls { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.controls select, .controls button { background: #0f172a; color: #e5e7eb; border: 1px solid #334155; border-radius: 8px; padding: .35rem .6rem; cursor: pointer; }
+.controls button:hover { border-color: #60a5fa; }
+.tabs { display: flex; gap: .4rem; margin-left: .2rem; }
+.tab-btn { background: none; border: 1px solid #334155; color: #cbd5e1; padding: .35rem .6rem; border-radius: 8px; cursor: pointer; }
+.tab-btn.active { background: #1f2937; color: #e5e7eb; }
+
+/* Map */
+.map-container { position: relative; flex: 1; }
+.leaflet-root { height: calc(100vh - 160px); width: 100%; }
+.leaflet-top.leaflet-left { top: 60px; }
+.leaflet-container { background: #0b0f18; }
+
+/* Alerts panel */
+.alerts-panel { position: absolute; top: 0; right: 0; width: 320px; height: 100%;
+  background: #111827; border-left: 1px solid #1f2937; padding: 1rem; overflow-y: auto; z-index: 1000; }
+.alert-card { background: #ef4444; color: #fff; padding: .75rem; border-radius: .6rem; margin-bottom: .75rem; }
+
+/* Forecast tab */
+.forecast-pane { padding: 1rem; display: flex; flex-direction: column; gap: .75rem; }
+.forecast-controls { display: flex; align-items: center; gap: .6rem; flex-wrap: wrap; }
+.hint { color: #94a3b8; font-size: .85rem; }
+.chart-card { background: #0f172a; border: 1px solid #334155; border-radius: 12px; padding: .5rem; }
+
+/* About */
+.about-pane { padding: 1rem; color: #cbd5e1; }
+.small { font-size: .85rem; color: #94a3b8; }
+
+/* Footer */
+.footer { text-align: center; font-size: .8rem; color: #9ca3af; padding: .4rem;
+  background: #0b0f18; border-top: 1px solid #1f2937; }
+
+/* Misc */
+* { box-sizing: border-box; }
